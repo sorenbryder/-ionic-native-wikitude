@@ -1,5 +1,5 @@
 {
-  "name": "@ionic-native/wikitude",
+  "name": "@ot-custom/ionic-native-wikitude",
   "version": "3.4.4",
   "description": "Ionic Native - Native plugins for ionic apps",
   "module": "index.js",
