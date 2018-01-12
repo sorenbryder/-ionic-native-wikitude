@@ -25,7 +25,7 @@ export declare class Wikitude {
     loadARchitectWorld(architectWorldPath: string, requiredFeatures: string[], startupConfiguration: Object): Promise<any>;
     setOnUrlInvokeCallback(onUrlInvokeCallback: Function): void;
     callJavaScript(js: string): void;
-    close(): void;
-    hide(): void;
-    show(): void;
+    close(): Promise<any>;
+    hide(): Promise<any>;
+    show(): Promise<any>;
 }

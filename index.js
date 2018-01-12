@@ -7,6 +7,18 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+/**
+ * This is a template for new plugin wrappers
+ *
+ * TODO:
+ * - Add/Change information below
+ * - Document usage (importing, executing main functionality)
+ * - Remove any imports that you are not using
+ * - Add this file to /src/index.ts (follow style of other plugins)
+ * - Remove all the comments included in this template, EXCEPT the @Plugin wrapper docs and any other docs you added
+ * - Remove this note
+ *
+ */
 import { Plugin, Cordova } from '@ionic-native/core';
 import { Injectable } from '@angular/core';
 /**
@@ -30,7 +42,7 @@ import { Injectable } from '@angular/core';
  *
  * ```
  */
-export var Wikitude = (function () {
+var Wikitude = (function () {
     function Wikitude() {
     }
     Wikitude.prototype.isDeviceSupported = function (requiredFeatures) { return; };
@@ -49,62 +61,62 @@ export var Wikitude = (function () {
     __decorate([
         Cordova({
             callbackOrder: 'reverse'
-        }), 
-        __metadata('design:type', Function), 
-        __metadata('design:paramtypes', [Array]), 
-        __metadata('design:returntype', Promise)
+        }),
+        __metadata("design:type", Function),
+        __metadata("design:paramtypes", [Array]),
+        __metadata("design:returntype", Promise)
     ], Wikitude.prototype, "isDeviceSupported", null);
     __decorate([
         Cordova({
             callbackOrder: 'reverse'
-        }), 
-        __metadata('design:type', Function), 
-        __metadata('design:paramtypes', [Array]), 
-        __metadata('design:returntype', Promise)
+        }),
+        __metadata("design:type", Function),
+        __metadata("design:paramtypes", [Array]),
+        __metadata("design:returntype", Promise)
     ], Wikitude.prototype, "requestAccess", null);
     __decorate([
         Cordova({
             callbackOrder: 'reverse'
-        }), 
-        __metadata('design:type', Function), 
-        __metadata('design:paramtypes', [String, Array, Object]), 
-        __metadata('design:returntype', Promise)
+        }),
+        __metadata("design:type", Function),
+        __metadata("design:paramtypes", [String, Array, Object]),
+        __metadata("design:returntype", Promise)
     ], Wikitude.prototype, "loadARchitectWorld", null);
     __decorate([
-        Cordova(), 
-        __metadata('design:type', Function), 
-        __metadata('design:paramtypes', [Function]), 
-        __metadata('design:returntype', void 0)
+        Cordova(),
+        __metadata("design:type", Function),
+        __metadata("design:paramtypes", [Function]),
+        __metadata("design:returntype", void 0)
     ], Wikitude.prototype, "setOnUrlInvokeCallback", null);
     __decorate([
-        Cordova(), 
-        __metadata('design:type', Function), 
-        __metadata('design:paramtypes', [String]), 
-        __metadata('design:returntype', void 0)
+        Cordova(),
+        __metadata("design:type", Function),
+        __metadata("design:paramtypes", [String]),
+        __metadata("design:returntype", void 0)
     ], Wikitude.prototype, "callJavaScript", null);
     __decorate([
         Cordova({
             callbackOrder: 'reverse'
-        }), 
-        __metadata('design:type', Function), 
-        __metadata('design:paramtypes', []), 
-        __metadata('design:returntype', void 0)
+        }),
+        __metadata("design:type", Function),
+        __metadata("design:paramtypes", []),
+        __metadata("design:returntype", Promise)
     ], Wikitude.prototype, "close", null);
     __decorate([
         Cordova({
             callbackOrder: 'reverse'
-        }), 
-        __metadata('design:type', Function), 
-        __metadata('design:paramtypes', []), 
-        __metadata('design:returntype', void 0)
+        }),
+        __metadata("design:type", Function),
+        __metadata("design:paramtypes", []),
+        __metadata("design:returntype", Promise)
     ], Wikitude.prototype, "hide", null);
     __decorate([
         Cordova({
             callbackOrder: 'reverse'
-        }), 
-        __metadata('design:type', Function), 
-        __metadata('design:paramtypes', []), 
-        __metadata('design:returntype', void 0)
+        }),
+        __metadata("design:type", Function),
+        __metadata("design:paramtypes", []),
+        __metadata("design:returntype", Promise)
     ], Wikitude.prototype, "show", null);
     Wikitude = __decorate([
         Plugin({
@@ -113,9 +125,9 @@ export var Wikitude = (function () {
             plugin: 'com.wikitude.phonegap.wikitudeplugin',
             pluginRef: 'WikitudePlugin',
             platforms: ['Android', 'iOS']
-        }), 
-        __metadata('design:paramtypes', [])
+        })
     ], Wikitude);
     return Wikitude;
 }());
+export { Wikitude };
 //# sourceMappingURL=index.js.map
